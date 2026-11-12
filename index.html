@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Çözümleri | NovaAI Studio</title>
+  <title>Ana Sayfa | NovaAI Studio</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -16,8 +16,8 @@
       <div class="nav-right">
         <nav aria-label="Ana Menü">
           <ul class="nav-list">
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="cozumler.html" class="active">AI Çözümleri</a></li>
+            <li><a href="index.html" class="active">Ana Sayfa</a></li>
+            <li><a href="cozumler.html">AI Çözümleri</a></li>
             <li><a href="vizyonumuz.html">Vizyonumuz</a></li>
           </ul>
         </nav>
@@ -28,109 +28,121 @@
     </div>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <span class="eyebrow">MODÜLER ENTEGRASYON KATALOGU</span>
-      <h1>Web sitenizi üst seviyeye taşıyacak <span class="text-gradient">AI modülleri</span></h1>
-      <p class="section-lead">
-        Mevcut altyapınızı bozmadan entegre ettiğimiz yapay zeka çözümlerini inceleyin ve ihtiyacınız olan modülü başlığa göre anlık filtreleyin.
-      </p>
-
-      <div class="search-panel">
-        <label for="event-search" class="search-label">Çözüm başlığında ara</label>
-        <div class="search-row">
-          <input 
-            type="search" 
-            id="event-search" 
-            class="search-input" 
-            placeholder="Örn: HTML, CSS, JavaScript, GitHub, AI..." 
-            autocomplete="off"
-          >
-          <button type="button" id="clear-search" class="btn btn-primary">Temizle</button>
+  <main>
+    <!-- Hero Bölümü -->
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">YENİ NESİL WEB MİMARİSİ</span>
+        <h1>Klasik web sitenizi <span class="text-gradient">otonom çalışan AI sistemine</span> dönüştürün.</h1>
+        <p class="hero-desc">
+          NovaAI Studio olarak mevcut HTML, CSS ve JavaScript altyapınızı sıfırdan yıkmadan; akıllı arama, kişiselleştirilmiş arayüz ve 7/24 satış asistanı modülleriyle güçlendiriyoruz.
+        </p>
+        <div class="hero-actions">
+          <a href="cozumler.html" class="btn btn-primary">AI Çözümlerini İncele</a>
+          <a href="vizyonumuz.html" class="btn btn-outline">Nasıl Çalışıyoruz?</a>
         </div>
-        <p id="result-count" class="result-count" aria-live="polite">5 çözüm gösteriliyor.</p>
+
+        <div class="metrics-bar" aria-label="Performans Metrikleri">
+          <div class="metric-item">
+            <strong>+240%</strong>
+            <span>Organik Arama ve AI Görünürlüğü</span>
+          </div>
+          <div class="metric-item">
+            <strong>3.8x</strong>
+            <span>Ziyaretçi Etkileşim ve Dönüşüm Oranı</span>
+          </div>
+          <div class="metric-item">
+            <strong>7/24</strong>
+            <span>Otonom Müşteri Karşılama ve Destek</span>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div id="empty-message" class="empty-state" hidden>
-        Aramanıza uygun AI dönüşüm çözümü bulunamadı. Lütfen farklı bir anahtar kelime deneyin.
+    <!-- Temel Yetenekler Bölümü -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">TEMEL TEKNOLOJİ KATMANLARI</span>
+          <h2>Sitenize Entegre Ettiğimiz <span class="text-gradient">Üçlü Zeka Mimarisi</span></h2>
+          <p class="section-lead">
+            Modern web standartlarını yapay zeka modelleriyle birleştirerek sitenizin her katmanını akıllı hale getiriyoruz.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="feature-card">
+            <div>
+              <div class="card-step">KATMAN // 01</div>
+              <h3 class="card-title">Semantik HTML &amp; AI SEO</h3>
+              <p class="card-desc">
+                Arama motorları ve yapay zeka özetleyicileri için temiz, erişilebilir ve yüksek hızda taranabilir belge yapısı kuruyoruz.
+              </p>
+            </div>
+            <p class="card-location">Odak: Maksimum Bulunabilirlik</p>
+          </article>
+
+          <article class="feature-card">
+            <div>
+              <div class="card-step">KATMAN // 02</div>
+              <h3 class="card-title">Adaptif CSS &amp; Dinamik Tema</h3>
+              <p class="card-desc">
+                Kullanıcı tercihlerine, ekran boyutuna ve ortam ışığına uyum sağlayan yüksek kontrastlı modern arayüz sistemleri tasarlıyoruz.
+              </p>
+            </div>
+            <p class="card-location">Odak: Kusursuz Kullanıcı Deneyimi</p>
+          </article>
+
+          <article class="feature-card">
+            <div>
+              <div class="card-step">KATMAN // 03</div>
+              <h3 class="card-title">JavaScript &amp; Canlı Etkileşim</h3>
+              <p class="card-desc">
+                Sayfa yenilemeden çalışan anlık filtreleme, semantik arama ve ziyaretçiyle konuşan akıllı asistan modülleri geliştiriyoruz.
+              </p>
+            </div>
+            <p class="card-location">Odak: Anlık Tepki &amp; Dönüşüm</p>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div id="cards-grid" class="cards-grid">
-        <!-- Kart 1 -->
-        <article class="solution-card">
-          <div>
-            <div class="card-meta">KURULUM: 3 GÜN • PERFORMANS</div>
-            <h2 class="card-title">HTML Semantik ve AI SEO Motoru</h2>
-            <p class="card-desc">
-              Sitenizin HTML iskeletini yapay zeka tarayıcıları ve arama motorları için yeniden yapılandırır, organik görünürlüğü otonom artırır.
-            </p>
-          </div>
-          <p class="card-location">Entegrasyon: DOM &amp; Bulut API</p>
-        </article>
+    <!-- Önce / Sonra Karşılaştırma Bölümü -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">DÖNÜŞÜM FARKI</span>
+          <h2>Geleneksel Web Sitesi vs. <span class="text-gradient">NovaAI Destekli Web</span></h2>
+          <p class="section-lead">
+            Statik bir tanıtım sayfasından, ziyaretçiyi tanıyan ve yönlendiren aktif bir platforma geçişin farkını görün.
+          </p>
+        </div>
 
-        <!-- Kart 2 -->
-        <article class="solution-card">
-          <div>
-            <div class="card-meta">KURULUM: 5 GÜN • ARAYÜZ</div>
-            <h2 class="card-title">CSS Dinamik Tasarım ve UX Kişiselleştirme</h2>
-            <p class="card-desc">
-              Ziyaretçinin cihazına ve gezinme davranışına göre renk kontrastlarını, buton yerleşimlerini ve vitrin düzenini gerçek zamanlı uyarlar.
-            </p>
+        <div class="comparison-box">
+          <div class="comp-col comp-old">
+            <span class="badge badge-muted">ÖNCE: KLASİK STATİK SİTE</span>
+            <h3>Pasif Dijital Broşür</h3>
+            <ul>
+              <li>Her ziyaretçiye aynı sabit içerik ve karmaşık menüler gösterilir.</li>
+              <li>Kullanıcı aradığı hizmeti bulamadığında sayfayı hızla terk eder.</li>
+              <li>Mesai saatleri dışında gelen müşteri sorularına yanıt verilemez.</li>
+              <li>Kırık bağlantılar ve erişilebilirlik eksikleri manuel kontrol gerektirir.</li>
+            </ul>
           </div>
-          <p class="card-location">Entegrasyon: Stil &amp; Tema Katmanı</p>
-        </article>
 
-        <!-- Kart 3 -->
-        <article class="solution-card">
-          <div>
-            <div class="card-meta">KURULUM: 4 GÜN • ETKİLEŞİM</div>
-            <h2 class="card-title">JavaScript Tabanlı Otonom Satış Asistanı</h2>
-            <p class="card-desc">
-              Sitenize gelen ziyaretçilerle doğal dilde konuşan, ürün öneren ve müşteriyi doğrudan satın alma adımına taşıyan akıllı web ajanı.
-            </p>
+          <div class="comp-col comp-new">
+            <span class="badge badge-accent">SONRA: NOVAAI DÖNÜŞÜMÜ</span>
+            <h3>Otonom Dijital İş Ortağı</h3>
+            <ul>
+              <li>Davranışa göre kişiselleşen arayüz ve yüksek okunabilirlikli tema desteği.</li>
+              <li>Canlı arama ve akıllı filtreleme ile saniyeler içinde doğru çözüme ulaşım.</li>
+              <li>7/24 çalışan yapay zeka satış asistanı ile kesintisiz müşteri kazanımı.</li>
+              <li>GitHub ve CI/CD entegrasyonuyla kendi kendini denetleyen modern altyapı.</li>
+            </ul>
           </div>
-          <p class="card-location">Entegrasyon: Web İstemcisi &amp; LLM</p>
-        </article>
-
-        <!-- Kart 4 -->
-        <article class="solution-card">
-          <div>
-            <div class="card-meta">KURULUM: 2 GÜN • OTOMASYON</div>
-            <h2 class="card-title">GitHub ve CI/CD Destekli Akıllı Güncelleme</h2>
-            <p class="card-desc">
-              Web sitenizdeki kırık bağlantıları, yavaşlayan görselleri ve kod hatalarını otomatik tespit edip sürüm kontrolüyle anında onaran sistem.
-            </p>
-          </div>
-          <p class="card-location">Entegrasyon: Git Deposu &amp; Sunucu</p>
-        </article>
-
-        <!-- Kart 5 -->
-        <article class="solution-card">
-          <div>
-            <div class="card-meta">KURULUM: 7 GÜN • TAM PAKET</div>
-            <h2 class="card-title">AI ile Kurumsal Web Dönüşümü</h2>
-            <p class="card-desc">
-              Klasik kurumsal web sitenizi uçtan uca yenileyerek çok dilli çeviri, akıllı içerik üretimi ve tahmine dayalı analitik paneliyle donatır.
-            </p>
-          </div>
-          <p class="card-location">Entegrasyon: Tam Kapsamlı Mimari</p>
-        </article>
-
-        <!-- SLAYT 30 (Ders Sonu Görevi) İçin 6. Kart -->
-        <!--
-        <article class="solution-card">
-          <div>
-            <div class="card-meta">KURULUM: 3 GÜN • E-TİCARET</div>
-            <h2 class="card-title">Akıllı Ürün Öneri ve Arama Motoru</h2>
-            <p class="card-desc">
-              Kullanıcının yazım hatalarını anlayan ve niyetine göre en yüksek dönüşümlü ürünleri saniyeler içinde listeleyen semantik arama altyapısı.
-            </p>
-          </div>
-          <p class="card-location">Entegrasyon: Katalog Katmanı</p>
-        </article>
-        -->
+        </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="site-footer">

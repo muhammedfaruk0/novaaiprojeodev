@@ -13,22 +13,27 @@
       <a href="index.html" class="brand">
         <span class="brand-dot"></span>NovaAI <span>Studio</span>
       </a>
-      <nav aria-label="Ana Menü">
-        <ul class="nav-list">
-          <li><a href="index.html">Ana Sayfa</a></li>
-          <li><a href="cozumler.html" class="active">AI Çözümleri</a></li>
-          <li><a href="vizyonumuz.html">Vizyonumuz</a></li>
-        </ul>
-      </nav>
+      <div class="nav-right">
+        <nav aria-label="Ana Menü">
+          <ul class="nav-list">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="cozumler.html" class="active">AI Çözümleri</a></li>
+            <li><a href="vizyonumuz.html">Vizyonumuz</a></li>
+          </ul>
+        </nav>
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Temayı Değiştir">
+          ☀️ Açık Tema
+        </button>
+      </div>
     </div>
   </header>
 
   <main class="section">
     <div class="container">
-      <span class="eyebrow">DÖNÜŞÜM PAKETLERİ VE MODÜLLER</span>
-      <h1>Web sitenizi üst seviyeye taşıyacak AI modülleri</h1>
+      <span class="eyebrow">MODÜLER ENTEGRASYON KATALOGU</span>
+      <h1>Web sitenizi üst seviyeye taşıyacak <span class="text-gradient">AI modülleri</span></h1>
       <p class="section-lead">
-        Mevcut altyapınızı bozmadan entegre ettiğimiz yapay zeka çözümlerini inceleyin ve ihtiyacınız olan modülü başlığa göre arayın.
+        Mevcut altyapınızı bozmadan entegre ettiğimiz yapay zeka çözümlerini inceleyin ve ihtiyacınız olan modülü başlığa göre anlık filtreleyin.
       </p>
 
       <div class="search-panel">
@@ -38,12 +43,12 @@
             type="search" 
             id="event-search" 
             class="search-input" 
-            placeholder="Örn: HTML, Asistan, SEO, Tasarım..." 
+            placeholder="Örn: HTML, CSS, JavaScript, GitHub, AI, Akıllı..." 
             autocomplete="off"
           >
           <button type="button" id="clear-search" class="btn btn-primary">Temizle</button>
         </div>
-        <p id="result-count" class="result-count" aria-live="polite">5 çözüm gösteriliyor.</p>
+        <p id="result-count" class="result-count" aria-live="polite">6 çözüm gösteriliyor.</p>
       </div>
 
       <div id="empty-message" class="empty-state" hidden>
@@ -53,63 +58,75 @@
       <div id="cards-grid" class="cards-grid">
         <!-- Kart 1 -->
         <article class="solution-card">
-          <div class="card-meta">KURULUM: 3 GÜN • PERFORMANS MODÜLÜ</div>
-          <h2 class="card-title">HTML Semantik ve AI SEO Motoru</h2>
-          <p class="card-desc">
-            Sitenizin HTML iskeletini yapay zeka tarayıcıları ve arama motorları için yeniden yapılandırır, organik trafiği otonom olarak artırır.
-          </p>
+          <div>
+            <div class="card-meta">KURULUM: 3 GÜN • PERFORMANS MODÜLÜ</div>
+            <h2 class="card-title">HTML Semantik ve AI SEO Motoru</h2>
+            <p class="card-desc">
+              Sitenizin HTML iskeletini yapay zeka tarayıcıları ve arama motorları için yeniden yapılandırır, organik görünürlüğü otonom olarak artırır.
+            </p>
+          </div>
           <p class="card-location">Entegrasyon: Mevcut Web Altyapısı &amp; Bulut API</p>
         </article>
 
         <!-- Kart 2 -->
         <article class="solution-card">
-          <div class="card-meta">KURULUM: 5 GÜN • ARAYÜZ MODÜLÜ</div>
-          <h2 class="card-title">CSS Dinamik Tasarım ve UX Kişiselleştirme</h2>
-          <p class="card-desc">
-            Ziyaretçinin cihazına, saatine ve gezinme davranışına göre renk kontrastlarını, buton yerleşimlerini ve vitrin düzenini gerçek zamanlı uyarlar.
-          </p>
+          <div>
+            <div class="card-meta">KURULUM: 5 GÜN • ARAYÜZ MODÜLÜ</div>
+            <h2 class="card-title">CSS Dinamik Tasarım ve UX Kişiselleştirme</h2>
+            <p class="card-desc">
+              Ziyaretçinin cihazına, saatine ve gezinme davranışına göre renk kontrastlarını, buton yerleşimlerini ve vitrin düzenini gerçek zamanlı uyarlar.
+            </p>
+          </div>
           <p class="card-location">Entegrasyon: Frontend Stil Katmanı</p>
         </article>
 
         <!-- Kart 3 -->
         <article class="solution-card">
-          <div class="card-meta">KURULUM: 4 GÜN • ETKİLEŞİM MODÜLÜ</div>
-          <h2 class="card-title">JavaScript Tabanlı Otonom Satış Asistanı</h2>
-          <p class="card-desc">
-            Sitenize gelen ziyaretçilerle doğal dilde konuşan, ürün öneren ve müşteriyi doğrudan satın alma adımına taşıyan akıllı web ajanı.
-          </p>
+          <div>
+            <div class="card-meta">KURULUM: 4 GÜN • ETKİLEŞİM MODÜLÜ</div>
+            <h2 class="card-title">JavaScript Tabanlı Otonom Satış Asistanı</h2>
+            <p class="card-desc">
+              Sitenize gelen ziyaretçilerle doğal dilde konuşan, ürün öneren ve müşteriyi doğrudan satın alma adımına taşıyan akıllı web ajanı.
+            </p>
+          </div>
           <p class="card-location">Entegrasyon: Web İstemcisi &amp; LLM Köprüsü</p>
         </article>
 
         <!-- Kart 4 -->
         <article class="solution-card">
-          <div class="card-meta">KURULUM: 2 GÜN • OTOMASYON MODÜLÜ</div>
-          <h2 class="card-title">GitHub ve CI/CD Destekli Akıllı Güncelleme</h2>
-          <p class="card-desc">
-            Web sitenizdeki kırık bağlantıları, yavaşlayan görselleri ve kod hatalarını otomatik tespit edip sürüm kontrolüyle anında onaran sistem.
-          </p>
+          <div>
+            <div class="card-meta">KURULUM: 2 GÜN • OTOMASYON MODÜLÜ</div>
+            <h2 class="card-title">GitHub ve CI/CD Destekli Akıllı Güncelleme</h2>
+            <p class="card-desc">
+              Web sitenizdeki kırık bağlantıları, yavaşlayan görselleri ve kod hatalarını otomatik tespit edip sürüm kontrolüyle anında onaran sistem.
+            </p>
+          </div>
           <p class="card-location">Entegrasyon: Bulut Sunucu &amp; Git Deposu</p>
         </article>
 
         <!-- Kart 5 -->
         <article class="solution-card">
-          <div class="card-meta">KURULUM: 7 GÜN • TAM DÖNÜŞÜM PAKETİ</div>
-          <h2 class="card-title">AI ile Kurumsal Web Dönüşümü</h2>
-          <p class="card-desc">
-            Klasik kurumsal web sitenizi uçtan uca yenileyerek çok dilli çeviri, akıllı içerik üretimi ve tahmine dayalı analitik paneliyle donatır.
-          </p>
+          <div>
+            <div class="card-meta">KURULUM: 7 GÜN • TAM DÖNÜŞÜM PAKETİ</div>
+            <h2 class="card-title">AI ile Kurumsal Web Dönüşümü</h2>
+            <p class="card-desc">
+              Klasik kurumsal web sitenizi uçtan uca yenileyerek çok dilli çeviri, akıllı içerik üretimi ve tahmine dayalı analitik paneliyle donatır.
+            </p>
+          </div>
           <p class="card-location">Entegrasyon: Tam Kapsamlı Web Mimarisi</p>
         </article>
 
+        <!-- Kart 6 (Slayt 30 Ders Sonu Görevi) -->
         <article class="solution-card">
-          <div class="card-meta">KURULUM: 3 GÜN • E-TİCARET MODÜLÜ</div>
-          <h2 class="card-title">Akıllı Ürün Öneri ve Arama Motoru</h2>
-          <p class="card-desc">
-            Kullanıcının yazım hatalarını anlayan ve niyetine göre en yüksek dönüşümlü ürünleri saniyeler içinde listeleyen semantik arama altyapısı.
-          </p>
+          <div>
+            <div class="card-meta">KURULUM: 3 GÜN • E-TİCARET MODÜLÜ</div>
+            <h2 class="card-title">Akıllı Ürün Öneri ve Arama Motoru</h2>
+            <p class="card-desc">
+              Kullanıcının yazım hatalarını anlayan ve niyetine göre en yüksek dönüşümlü ürünleri saniyeler içinde listeleyen semantik arama altyapısı.
+            </p>
+          </div>
           <p class="card-location">Entegrasyon: Katalog ve Arama Katmanı</p>
         </article>
-        
       </div>
     </div>
   </main>

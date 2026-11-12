@@ -38,8 +38,12 @@ body.light-theme {
   --border-glow: #0891b2;
   --shadow-card: 0 12px 30px -10px rgba(15, 23, 42, 0.08);
   --shadow-glow: 0 10px 25px rgba(8, 145, 178, 0.15);
-  --header-bg: rgba(15, 23, 42, 0.96);
+  --header-bg: rgba(248, 250, 252, 0.92);
   --grid-line: rgba(15, 23, 42, 0.035);
+}
+
+[hidden] {
+  display: none !important;
 }
 
 * {
@@ -138,7 +142,7 @@ h3 {
 }
 
 .brand {
-  color: #ffffff;
+  color: var(--text-navy);
   text-decoration: none;
   font-weight: 700;
   font-size: 1.35rem;
@@ -148,7 +152,7 @@ h3 {
 }
 
 .brand span {
-  background: linear-gradient(90deg, #22d3ee, #a78bfa);
+  background: linear-gradient(90deg, var(--accent-neon), var(--accent-purple));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -157,8 +161,8 @@ h3 {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #22d3ee;
-  box-shadow: 0 0 14px #22d3ee, 0 0 28px #06b6d4;
+  background: var(--accent-neon);
+  box-shadow: 0 0 14px var(--accent-neon), 0 0 28px var(--accent-turquoise);
   animation: pulseGlow 2.5s infinite ease-in-out;
 }
 
@@ -179,14 +183,14 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-subtle);
   padding: 5px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-color);
 }
 
 .nav-list a {
-  color: #cbd5e1;
+  color: var(--text-muted);
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
@@ -197,7 +201,7 @@ h3 {
 }
 
 .nav-list a:hover {
-  color: #ffffff;
+  color: var(--text-navy);
 }
 
 .nav-list a.active {
@@ -207,9 +211,9 @@ h3 {
 }
 
 .theme-toggle {
-  background: rgba(255, 255, 255, 0.08);
-  color: #f8fafc;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: var(--bg-subtle);
+  color: var(--text-navy);
+  border: 1px solid var(--border-color);
   padding: 7px 14px;
   border-radius: 999px;
   font-size: 0.82rem;
@@ -220,8 +224,8 @@ h3 {
 }
 
 .theme-toggle:hover {
-  border-color: #22d3ee;
-  box-shadow: 0 0 12px rgba(34, 211, 238, 0.3);
+  border-color: var(--accent-neon);
+  box-shadow: var(--shadow-glow);
 }
 
 /* Hero Bölümü */
@@ -598,6 +602,11 @@ body.light-theme .empty-state {
   .nav-right {
     width: 100%;
     justify-content: space-between;
+    gap: 10px;
+  }
+
+  .nav-right nav {
+    width: 100%;
   }
 
   .nav-list {
