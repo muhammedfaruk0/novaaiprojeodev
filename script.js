@@ -5,6 +5,19 @@ const emptyMessage = document.querySelector("#empty-message");
 const cards = document.querySelectorAll(".solution-card");
 const themeToggle = document.querySelector("#theme-toggle");
 
+const SUN_ICON = `
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <circle cx="12" cy="12" r="4"></circle>
+    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+  </svg>
+`;
+
+const MOON_ICON = `
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+  </svg>
+`;
+
 // 1. Başlığa Göre Canlı Arama Fonksiyonu (Slayt 18 & 20 Kuralları)
 function filterSolutions() {
   if (!searchInput || !resultCount || !emptyMessage) return;
@@ -40,25 +53,33 @@ if (searchInput && clearButton) {
   filterSolutions();
 }
 
-// 2. Koyu (Obsidian AI) / Açık (Slayt 14 Akademik) Tema Değiştirici
+// 2. Açık / Koyu Tema Değiştirici (Dairesel SVG İkon Butonu)
 function applyTheme(theme) {
-  if (theme === "light") {
-    document.body.classList.add("light-theme");
-    if (themeToggle) themeToggle.textContent = "🌙 Koyu AI Tema";
-  } else {
-    document.body.classList.remove("light-theme");
-    if (themeToggle) themeToggle.textContent = "☀️ Açık Tema";
+  const isDark = theme === "dark";
+  document.body.classList.toggle("dark-theme", isDark);
+
+  if (themeToggle) {
+    themeToggle.innerHTML = isDark ? MOON_ICON : SUN_ICON;
+    themeToggle.setAttribute("aria-pressed", String(isDark));
+    themeToggle.setAttribute(
+      "aria-label",
+      isDark ? "Açık temaya geç" : "Koyu temaya geç"
+    );
+    themeToggle.setAttribute(
+      "title",
+      isDark ? "Açık temaya geç" : "Koyu temaya geç"
+    );
   }
 }
 
-const savedTheme = localStorage.getItem("nova-theme") || "dark";
+const savedTheme = localStorage.getItem("nova-theme-mode") || "light";
 applyTheme(savedTheme);
 
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
-    const isLight = document.body.classList.contains("light-theme");
-    const nextTheme = isLight ? "dark" : "light";
-    localStorage.setItem("nova-theme", nextTheme);
+    const isDark = document.body.classList.contains("dark-theme");
+    const nextTheme = isDark ? "light" : "dark";
+    localStorage.setItem("nova-theme-mode", nextTheme);
     applyTheme(nextTheme);
   });
 }

@@ -11,19 +11,27 @@
   <header class="site-header">
     <div class="container nav-container">
       <a href="index.html" class="brand">
-        <span class="brand-dot"></span>NovaAI <span>Studio</span>
+        NovaAI<span class="brand-dot" aria-hidden="true"></span><span>studio</span>
       </a>
+
+      <nav class="nav-center" aria-label="Ana Menü">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Ana Sayfa</a></li>
+          <li><a href="cozumler.html">AI Çözümleri</a></li>
+          <li><a href="vizyonumuz.html">Vizyonumuz</a></li>
+        </ul>
+      </nav>
+
       <div class="nav-right">
-        <nav aria-label="Ana Menü">
-          <ul class="nav-list">
-            <li><a href="index.html" class="active">Ana Sayfa</a></li>
-            <li><a href="cozumler.html">AI Çözümleri</a></li>
-            <li><a href="vizyonumuz.html">Vizyonumuz</a></li>
-          </ul>
-        </nav>
-        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Temayı Değiştir">
-          ☀️ Açık Tema
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Koyu temaya geç" aria-pressed="false" title="Koyu temaya geç">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
         </button>
+        <a href="cozumler.html" class="header-cta">
+          Çözümleri aç <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
       </div>
     </div>
   </header>
@@ -31,29 +39,65 @@
   <main>
     <!-- Hero Bölümü -->
     <section class="hero">
-      <div class="container">
-        <span class="eyebrow">YENİ NESİL WEB MİMARİSİ</span>
-        <h1>Klasik web sitenizi <span class="text-gradient">otonom çalışan AI sistemine</span> dönüştürün.</h1>
+      <div class="container hero-inner">
+        <span class="eyebrow">WEB MİMARİSİ. OTONOM DÖNÜŞÜM.</span>
+        <h1>Akıllı web altyapısı.<br>Ölçülebilir dönüşüm.</h1>
         <p class="hero-desc">
-          NovaAI Studio olarak mevcut HTML, CSS ve JavaScript altyapınızı sıfırdan yıkmadan; akıllı arama, kişiselleştirilmiş arayüz ve 7/24 satış asistanı modülleriyle güçlendiriyoruz.
+          Mevcut HTML, CSS ve JavaScript sisteminizi sıfırdan yıkmadan; canlı arama, uyarlanabilir arayüz ve 7/24 satış asistanı modülleriyle tek çalışma alanında güçlendirin.
         </p>
         <div class="hero-actions">
-          <a href="cozumler.html" class="btn btn-primary">AI Çözümlerini İncele</a>
-          <a href="vizyonumuz.html" class="btn btn-outline">Nasıl Çalışıyoruz?</a>
+          <a href="cozumler.html" class="btn btn-primary">
+            Çözümleri incele <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="vizyonumuz.html" class="btn btn-outline">
+            Nasıl çalışıyoruz?
+          </a>
         </div>
+      </div>
 
-        <div class="metrics-bar" aria-label="Performans Metrikleri">
-          <div class="metric-item">
-            <strong>+240%</strong>
-            <span>Organik Arama ve AI Görünürlüğü</span>
-          </div>
-          <div class="metric-item">
-            <strong>3.8x</strong>
-            <span>Ziyaretçi Etkileşim ve Dönüşüm Oranı</span>
-          </div>
-          <div class="metric-item">
-            <strong>7/24</strong>
-            <span>Otonom Müşteri Karşılama ve Destek</span>
+      <div class="hero-strip">
+        <div class="container">
+          <div class="metrics-bar" aria-label="Performans Metrikleri">
+            <div class="metric-item">
+              <div class="metric-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <strong>+240% Organik Görünürlük</strong>
+                <span>Semantik HTML ve AI SEO mimarisiyle hızlanan arama performansı.</span>
+              </div>
+            </div>
+
+            <div class="metric-item">
+              <div class="metric-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <div>
+                <strong>3.8x Dönüşüm Artışı</strong>
+                <span>Canlı filtreleme ve davranışa duyarlı arayüz kişiselleştirmesi.</span>
+              </div>
+            </div>
+
+            <div class="metric-item">
+              <div class="metric-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+                  <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+                  <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+                  <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+                </svg>
+              </div>
+              <div>
+                <strong>7/24 Otonom Asistan</strong>
+                <span>Ziyaretçi sorularını anlık yanıtlayan entegre web ajanı.</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -64,16 +108,16 @@
       <div class="container">
         <div class="section-header">
           <span class="eyebrow">TEMEL TEKNOLOJİ KATMANLARI</span>
-          <h2>Sitenize Entegre Ettiğimiz <span class="text-gradient">Üçlü Zeka Mimarisi</span></h2>
+          <h2>Sitenize entegre ettiğimiz üçlü mimari</h2>
           <p class="section-lead">
-            Modern web standartlarını yapay zeka modelleriyle birleştirerek sitenizin her katmanını akıllı hale getiriyoruz.
+            Modern web standartlarını yapay zeka modelleriyle birleştirerek sitenizin her katmanını hızlı, temiz ve akıllı hale getiriyoruz.
           </p>
         </div>
 
         <div class="grid-3">
           <article class="feature-card">
             <div>
-              <div class="card-step">KATMAN // 01</div>
+              <div class="card-step">01 — KATMAN</div>
               <h3 class="card-title">Semantik HTML &amp; AI SEO</h3>
               <p class="card-desc">
                 Arama motorları ve yapay zeka özetleyicileri için temiz, erişilebilir ve yüksek hızda taranabilir belge yapısı kuruyoruz.
@@ -84,7 +128,7 @@
 
           <article class="feature-card">
             <div>
-              <div class="card-step">KATMAN // 02</div>
+              <div class="card-step">02 — KATMAN</div>
               <h3 class="card-title">Adaptif CSS &amp; Dinamik Tema</h3>
               <p class="card-desc">
                 Kullanıcı tercihlerine, ekran boyutuna ve ortam ışığına uyum sağlayan yüksek kontrastlı modern arayüz sistemleri tasarlıyoruz.
@@ -95,7 +139,7 @@
 
           <article class="feature-card">
             <div>
-              <div class="card-step">KATMAN // 03</div>
+              <div class="card-step">03 — KATMAN</div>
               <h3 class="card-title">JavaScript &amp; Canlı Etkileşim</h3>
               <p class="card-desc">
                 Sayfa yenilemeden çalışan anlık filtreleme, semantik arama ve ziyaretçiyle konuşan akıllı asistan modülleri geliştiriyoruz.
@@ -112,15 +156,15 @@
       <div class="container">
         <div class="section-header">
           <span class="eyebrow">DÖNÜŞÜM FARKI</span>
-          <h2>Geleneksel Web Sitesi vs. <span class="text-gradient">NovaAI Destekli Web</span></h2>
+          <h2>Geleneksel web sitesi ve NovaAI farkı</h2>
           <p class="section-lead">
-            Statik bir tanıtım sayfasından, ziyaretçiyi tanıyan ve yönlendiren aktif bir platforma geçişin farkını görün.
+            Statik bir tanıtım sayfasından, ziyaretçiyi tanıyan ve doğru sonuca yönlendiren aktif bir platforma geçişi karşılaştırın.
           </p>
         </div>
 
         <div class="comparison-box">
           <div class="comp-col comp-old">
-            <span class="badge badge-muted">ÖNCE: KLASİK STATİK SİTE</span>
+            <span class="badge badge-muted">Önce: Klasik Statik Site</span>
             <h3>Pasif Dijital Broşür</h3>
             <ul>
               <li>Her ziyaretçiye aynı sabit içerik ve karmaşık menüler gösterilir.</li>
@@ -131,7 +175,7 @@
           </div>
 
           <div class="comp-col comp-new">
-            <span class="badge badge-accent">SONRA: NOVAAI DÖNÜŞÜMÜ</span>
+            <span class="badge badge-accent">Sonra: NovaAI Dönüşümü</span>
             <h3>Otonom Dijital İş Ortağı</h3>
             <ul>
               <li>Davranışa göre kişiselleşen arayüz ve yüksek okunabilirlikli tema desteği.</li>

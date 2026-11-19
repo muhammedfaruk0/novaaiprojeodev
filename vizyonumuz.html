@@ -11,82 +11,95 @@
   <header class="site-header">
     <div class="container nav-container">
       <a href="index.html" class="brand">
-        <span class="brand-dot"></span>NovaAI <span>Studio</span>
+        NovaAI<span class="brand-dot" aria-hidden="true"></span><span>studio</span>
       </a>
+
+      <nav class="nav-center" aria-label="Ana Menü">
+        <ul class="nav-list">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="cozumler.html">AI Çözümleri</a></li>
+          <li><a href="vizyonumuz.html" class="active">Vizyonumuz</a></li>
+        </ul>
+      </nav>
+
       <div class="nav-right">
-        <nav aria-label="Ana Menü">
-          <ul class="nav-list">
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="cozumler.html">AI Çözümleri</a></li>
-            <li><a href="vizyonumuz.html" class="active">Vizyonumuz</a></li>
-          </ul>
-        </nav>
-        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Temayı Değiştir">
-          ☀️ Açık Tema
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Koyu temaya geç" aria-pressed="false" title="Koyu temaya geç">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
         </button>
+        <a href="cozumler.html" class="header-cta">
+          Çözümleri aç <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
       </div>
     </div>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <span class="eyebrow">KURUMSAL VİZYON &amp; METODOLOJİ</span>
-      <h1>Web sitelerini dijital broşür olmaktan çıkarıp <span class="text-gradient">akıllı iş ortaklarına</span> dönüştürüyoruz.</h1>
-      <p class="section-lead">
-        NovaAI Studio olarak amacımız, işletmelerin sahip olduğu standart web sitelerini sıfırdan yıkmak yerine, 
-        modern yapay zeka katmanlarıyla güçlendirerek maksimum ticari değer üreten sistemler haline getirmektir.
-      </p>
-
-      <div class="grid-2">
-        <article class="feature-card">
-          <div>
-            <div class="card-step">MİSYON // 01</div>
-            <h2>Amacımız ve Yaklaşımımız</h2>
-            <p class="card-desc">
-              İnternet dünyasında milyonlarca web sitesi yalnızca bilgi gösteren pasif sayfalar olarak kalmaktadır. 
-              Biz, her ölçekten işletmenin küresel teknoloji devleri gibi akıllı, kişiselleştirilmiş ve kendi kendine 
-              optimize olan web deneyimleri sunabilmesini sağlıyoruz.
-            </p>
-          </div>
-          <div class="card-location">Odak: Sürdürülebilir Dijital Büyüme</div>
-        </article>
-
-        <article class="feature-card">
-          <div>
-            <div class="card-step">UZMANLIK // 02</div>
-            <h2>Çalışma Alanlarımız</h2>
-            <ul class="clean-list">
-              <li><strong>Ön Yüz (Frontend) Zekası:</strong> Kullanıcı davranışına duyarlı adaptif HTML/CSS arayüzler.</li>
-              <li><strong>Konuşma Arayüzleri:</strong> Web sitesine gömülü, şirket verisiyle eğitilmiş 7/24 AI danışmanlar.</li>
-              <li><strong>Erişilebilirlik ve Hız:</strong> Klavye navigasyonu, ekran okuyucu uyumu ve milisaniyelik tepki süreleri.</li>
-              <li><strong>Veri Odaklı Dönüşüm:</strong> Ziyaretçi kaybını önleyen gerçek zamanlı içerik ve arama optimizasyonu.</li>
-            </ul>
-          </div>
-          <div class="card-location">Odak: İnsan Merkezli AI Mimarisi</div>
-        </article>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">KURUMSAL VİZYON &amp; METODOLOJİ</span>
+        <h1>Dijital broşürlerden akıllı iş ortaklarına.</h1>
+        <p class="section-lead">
+          NovaAI Studio olarak amacımız, işletmelerin sahip olduğu standart web sitelerini sıfırdan yıkmak yerine, modern yapay zeka katmanlarıyla güçlendirerek maksimum ticari değer üreten sistemler haline getirmektir.
+        </p>
       </div>
+    </section>
 
-      <div class="process-banner">
-        <h2>3 Adımda Sitenizi Nasıl Üst Seviyeye Taşıyoruz?</h2>
-        <div class="grid-3">
-          <div>
-            <div class="card-step">ADIM 01</div>
-            <h3>Teknik Denetim</h3>
-            <p class="card-desc">Mevcut sitenizin hız, erişilebilirlik, mobil uyum ve ziyaretçi kaybı noktalarını analiz ediyoruz.</p>
-          </div>
-          <div>
-            <div class="card-step">ADIM 02</div>
-            <h3>AI Katmanı Kurulumu</h3>
-            <p class="card-desc">Sitenize özel arama, kişiselleştirme ve akıllı asistan modüllerini hafif JavaScript mimarisiyle bağlıyoruz.</p>
-          </div>
-          <div>
-            <div class="card-step">ADIM 03</div>
-            <h3>Sürekli Optimizasyon</h3>
-            <p class="card-desc">Canlıya alınan sistemin dönüşüm metriklerini izliyor ve yapay zeka modellerini güncel tutuyoruz.</p>
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <article class="feature-card">
+            <div>
+              <div class="card-step">01 — MİSYON</div>
+              <h2>Amacımız ve Yaklaşımımız</h2>
+              <p class="card-desc">
+                İnternet dünyasında milyonlarca web sitesi yalnızca bilgi gösteren pasif sayfalar olarak kalmaktadır. 
+                Biz, her ölçekten işletmenin küresel teknoloji devleri gibi akıllı, kişiselleştirilmiş ve kendi kendine 
+                optimize olan web deneyimleri sunabilmesini sağlıyoruz.
+              </p>
+            </div>
+            <div class="card-location">Odak: Sürdürülebilir Dijital Büyüme</div>
+          </article>
+
+          <article class="feature-card">
+            <div>
+              <div class="card-step">02 — UZMANLIK</div>
+              <h2>Çalışma Alanlarımız</h2>
+              <ul class="clean-list">
+                <li><strong>Ön Yüz (Frontend) Zekası:</strong> Kullanıcı davranışına duyarlı adaptif HTML/CSS arayüzler.</li>
+                <li><strong>Konuşma Arayüzleri:</strong> Web sitesine gömülü, şirket verisiyle eğitilmiş 7/24 AI danışmanlar.</li>
+                <li><strong>Erişilebilirlik ve Hız:</strong> Klavye navigasyonu, ekran okuyucu uyumu ve milisaniyelik tepki süreleri.</li>
+                <li><strong>Veri Odaklı Dönüşüm:</strong> Ziyaretçi kaybını önleyen gerçek zamanlı içerik ve arama optimizasyonu.</li>
+              </ul>
+            </div>
+            <div class="card-location">Odak: İnsan Merkezli AI Mimarisi</div>
+          </article>
+        </div>
+
+        <div class="process-banner">
+          <h2>3 Adımda Sitenizi Nasıl Üst Seviyeye Taşıyoruz?</h2>
+          <div class="grid-3">
+            <div>
+              <div class="card-step">ADIM 01</div>
+              <h3>Teknik Denetim</h3>
+              <p class="card-desc">Mevcut sitenizin hız, erişilebilirlik, mobil uyum ve ziyaretçi kaybı noktalarını analiz ediyoruz.</p>
+            </div>
+            <div>
+              <div class="card-step">ADIM 02</div>
+              <h3>AI Katmanı Kurulumu</h3>
+              <p class="card-desc">Sitenize özel arama, kişiselleştirme ve akıllı asistan modüllerini hafif JavaScript mimarisiyle bağlıyoruz.</p>
+            </div>
+            <div>
+              <div class="card-step">ADIM 03</div>
+              <h3>Sürekli Optimizasyon</h3>
+              <p class="card-desc">Canlıya alınan sistemin dönüşüm metriklerini izliyor ve yapay zeka modellerini güncel tutuyoruz.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="site-footer">
